@@ -1,11 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
 import TestimonialCard from "@/components/TestimonialCard";
 import TextTestimonialCard from "@/components/TextTestimonialCard";
 import FormsAppEmbed from "@/components/FormsAppEmbed";
-
 const Index = () => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -14,17 +12,17 @@ const Index = () => {
     script.defer = true;
     script.onload = () => {
       // @ts-ignore
-      new window.formsapp('680ffb834528e40002798b7b', 'standard', {'width':'100vw','height':'600px'}, 'https://59yt4z4p.forms.app');
+      new window.formsapp('680ffb834528e40002798b7b', 'standard', {
+        'width': '100vw',
+        'height': '600px'
+      }, 'https://59yt4z4p.forms.app');
     };
     document.body.appendChild(script);
-    
     return () => {
       document.body.removeChild(script);
     };
   }, []);
-
-  return (
-    <div className="min-h-screen bg-[#1C1C1A] text-white flex flex-col items-center font-satoshi">
+  return <div className="min-h-screen bg-[#1C1C1A] text-white flex flex-col items-center font-satoshi">
       {/* Hero Section with Video */}
       <section className="w-full max-w-5xl mx-auto px-4 py-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
@@ -34,16 +32,7 @@ const Index = () => {
         </h1>
         
         <div className="mt-8 relative w-full max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl">
-          <iframe
-            width="100%"
-            height="400"
-            src="https://www.youtube.com/embed/zJ5YbsF0ffQ"
-            title="Video de apresentação"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="rounded-lg"
-          ></iframe>
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/zJ5YbsF0ffQ" title="Video de apresentação" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-lg"></iframe>
         </div>
 
         {/* Form Section */}
@@ -60,55 +49,27 @@ const Index = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Primeiro vídeo */}
-          <TestimonialCard 
-            videoUrl="https://www.youtube.com/embed/R5GzrNiRzMA"
-            username="@soudaviribas"
-            role="Founder Creator da Eternity"
-          />
+          <TestimonialCard videoUrl="https://www.youtube.com/embed/R5GzrNiRzMA" username="@soudaviribas" role="Founder Creator da Eternity" />
           
           {/* Primeiro texto */}
-          <TextTestimonialCard 
-            text="Antes da MasterPiece nunca tinha encontrado alguém que conseguisse entender o que eu queria fazer para traduzir isso para meus alunos."
-            username="@prof.jairsoares"
-            role="Founder Creator TRG"
-          />
+          <TextTestimonialCard text="Antes da MasterPiece nunca tinha encontrado alguém que conseguisse entender o que eu queria fazer para traduzir isso para meus alunos." username="@prof.jairsoares" role="Founder Creator TRG" />
           
           {/* Segundo vídeo */}
-          <TestimonialCard 
-            videoUrl="https://www.youtube.com/embed/Ohrl31XKudI"
-            username="@dr.andrefreitass"
-            role="Founder Creator da Dentista Classe A"
-          />
+          <TestimonialCard videoUrl="https://www.youtube.com/embed/Ohrl31XKudI" username="@dr.andrefreitass" role="Founder Creator da Dentista Classe A" />
           
           {/* Segundo texto */}
-          <TextTestimonialCard 
-            text="Com a ajuda de tudo aqui dentro fiz meu primeiro evento na minha cidade nova AGV, fiz a primeira turma do Método IV, e já vamos fazer a segunda essa semana"
-            username="@wellingtonavila_"
-            role="Founder Creator Método IV"
-          />
+          <TextTestimonialCard text="Com a ajuda de tudo aqui dentro fiz meu primeiro evento na minha cidade nova AGV, fiz a primeira turma do Método IV, e já vamos fazer a segunda essa semana" username="@wellingtonavila_" role="Founder Creator Método IV" />
           
           {/* Terceiro vídeo */}
-          <TestimonialCard 
-            videoUrl="https://www.youtube.com/embed/nl7GXeevWbY"
-            username="@yallioliveira"
-            role="Founder Creator do Grupo UNBK"
-          />
+          <TestimonialCard videoUrl="https://www.youtube.com/embed/nl7GXeevWbY" username="@yallioliveira" role="Founder Creator do Grupo UNBK" />
           
           {/* Quarto vídeo */}
-          <TestimonialCard 
-            videoUrl="https://www.youtube.com/embed/YOEZzLpG1rM?feature=share"
-            username="@darlansousa"
-            role="Founder Creator do Clube de Vendas"
-          />
+          <TestimonialCard videoUrl="https://www.youtube.com/embed/YOEZzLpG1rM?feature=share" username="@darlansousa" role="Founder Creator do Clube de Vendas" />
         </div>
         
         {/* Logo Below Testimonials */}
         <div className="w-full flex justify-center mt-16 mb-8">
-          <img 
-            src="/lovable-uploads/8d000680-d8aa-4791-a481-b07fc4dc67f9.png" 
-            alt="MasterPiece Logo" 
-            className="h-32"
-          />
+          <img src="/lovable-uploads/8d000680-d8aa-4791-a481-b07fc4dc67f9.png" alt="MasterPiece Logo" className="h-32" />
         </div>
       </section>
       
@@ -116,11 +77,7 @@ const Index = () => {
       <footer className="w-full bg-[#1C1C1A] py-10 px-4 border-t border-gray-800">
         <div className="max-w-5xl mx-auto flex flex-col items-center">
           <div className="mb-10">
-            <img 
-              src="https://masterpiece.ai/wp-content/uploads/2023/03/masterpiece-sem-bg.png" 
-              alt="MasterPiece Logo" 
-              className="h-12"
-            />
+            
           </div>
           
           <div className="text-xs text-[#DAD5D0] text-center max-w-3xl">
@@ -164,8 +121,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
