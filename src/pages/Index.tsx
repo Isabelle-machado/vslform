@@ -1,11 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
 import TestimonialCard from "@/components/TestimonialCard";
 import TextTestimonialCard from "@/components/TextTestimonialCard";
 import FormsAppEmbed from "@/components/FormsAppEmbed";
-
 const Index = () => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -24,24 +22,12 @@ const Index = () => {
       document.body.removeChild(script);
     };
   }, []);
-
   return <div className="min-h-screen bg-[#1C1C1A] text-white flex flex-col items-center font-satoshi">
-      {/* Header with Logo */}
-      <header className="w-full bg-[#1C1C1A] py-6 px-4 flex justify-center">
-        <div className="max-w-5xl w-full flex justify-start">
-          <img 
-            src="/lovable-uploads/fcacefd2-62d5-4e0b-900e-acbf063ac181.png" 
-            alt="MasterPiece Logo" 
-            className="h-16"
-          />
-        </div>
-      </header>
-      
       {/* Hero Section with Video */}
       <section className="w-full max-w-5xl mx-auto px-4 py-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Assista o vídeo abaixo para entender como podemos{" "}
-          <span className="text-white">revolucionar</span> seu negócio
+          <span className="text-white py-0 mx-0 rounded-none px-0">revolucionar</span> seu negócio
           educacional com sistemas e tecnologia
         </h1>
         
@@ -137,5 +123,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
