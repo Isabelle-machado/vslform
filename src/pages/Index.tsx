@@ -24,12 +24,12 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center">
+    <div className="min-h-screen bg-[#1C1C1A] text-white flex flex-col items-center font-satoshi">
       {/* Hero Section with Video */}
       <section className="w-full max-w-5xl mx-auto px-4 py-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Assista o vídeo abaixo para entender como podemos{" "}
-          <span className="text-yellow-400">revolucionar</span> seu negócio
+          <span className="text-white">revolucionar</span> seu negócio
           educacional com sistemas e tecnologia
         </h1>
         
@@ -37,7 +37,7 @@ const Index = () => {
           <iframe
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/zJ5YbsF0ffQ"
             title="Video de apresentação"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -55,60 +55,66 @@ const Index = () => {
       {/* Testimonials Section */}
       <section className="w-full max-w-5xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold text-center mb-10">
-          O que nossos clientes dizem sobre a <span className="italic">MasterPiece</span>
+          O que os especialistas estão dizendo sobre a <span className="italic">MasterPiece</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Primeiro vídeo */}
           <TestimonialCard 
-            videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            username="@xaviersilva"
+            videoUrl="https://www.youtube.com/embed/R5GzrNiRzMA"
+            username="@soudaviribas"
+            role="Founder Creator da Eternity"
           />
           
           {/* Primeiro texto */}
           <TextTestimonialCard 
             text="Antes da MasterPiece nunca tinha encontrado alguém que conseguisse entender o que eu queria fazer para traduzir isso para meus alunos."
-            username="@profabriana"
+            username="@prof.jairsoares"
+            role="Founder Creator TRG"
           />
           
           {/* Segundo vídeo */}
           <TestimonialCard 
-            videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            username="@dralexandrina"
+            videoUrl="https://www.youtube.com/embed/Ohrl31XKudI"
+            username="@dr.andrefreitass"
+            role="Founder Creator da Dentista Classe A"
           />
           
-          {/* Novo texto - adicionado conforme solicitado */}
+          {/* Segundo texto */}
           <TextTestimonialCard 
             text="Com a ajuda de tudo aqui dentro fiz meu primeiro evento na minha cidade nova AGV, fiz a primeira turma do Método IV, e já vamos fazer a segunda essa semana"
             username="@wellingtonavila_"
+            role="Founder Creator Método IV"
           />
           
           {/* Terceiro vídeo */}
           <TestimonialCard 
-            videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            username="@jolivieira"
+            videoUrl="https://www.youtube.com/embed/nl7GXeevWbY"
+            username="@yallioliveira"
+            role="Founder Creator do Grupo UNBK"
           />
           
           {/* Quarto vídeo */}
           <TestimonialCard 
-            videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            username="@drfernandes"
+            videoUrl="https://www.youtube.com/embed/YOEZzLpG1rM?feature=share"
+            username="@darlansousa"
+            role="Founder Creator do Clube de Vendas"
           />
         </div>
       </section>
       
       {/* Footer with Logo */}
-      <footer className="w-full bg-black py-10 px-4 border-t border-gray-800">
+      <footer className="w-full bg-[#1C1C1A] py-10 px-4 border-t border-gray-800">
         <div className="max-w-5xl mx-auto flex flex-col items-center">
           <div className="mb-10">
             <img 
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMjAwIDUwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMThweCIgZmlsbD0id2hpdGUiPk1BU1RFUiBQSUVDRTwvdGV4dD48L3N2Zz4=" 
+              src="https://masterpiece.ai/wp-content/uploads/2023/03/masterpiece-sem-bg.png" 
               alt="MasterPiece Logo" 
               className="h-12"
             />
           </div>
           
-          <div className="text-xs text-gray-400 text-center max-w-3xl">
+          <div className="text-xs text-[#DAD5D0] text-center max-w-3xl">
             <p className="mb-4 uppercase text-sm">IMPORTANTE: Isenção de responsabilidade sobre ganhos e rendimentos.</p>
             <p className="mb-6 text-xs">
               Embora todos os depoimentos nesta página sejam reais, estes resultados são excepcionais e não representativos dos resultados que podem ser esperados por uma pessoa média. Os resultados podem variar conforme suas habilidades, experiência, formação e outros fatores. Ganhos anteriores não indicam resultados futuros.
@@ -120,7 +126,7 @@ const Index = () => {
           
           <div className="mt-10 text-center">
             <h3 className="font-bold text-xl mb-2">MasterPiece</h3>
-            <p className="text-sm text-gray-400 mb-4">Revolucionando negócios educacionais com sistemas e tecnologia de ponta.</p>
+            <p className="text-sm text-[#DAD5D0] mb-4">Ensine com alma. Construa com clareza. Venda em escala.</p>
             <div className="flex justify-center space-x-4">
               <a href="#" className="text-white hover:text-gray-400">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

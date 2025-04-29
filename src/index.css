@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,33 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Satoshi', sans-serif;
   }
+
+  /* Custom CTA button */
+  .cta-button {
+    @apply bg-[#EFCB20] text-black font-bold py-3 px-6 rounded-md hover:shadow-lg transition-all duration-300 ease-in-out;
+  }
+}
+
+/* Global styles */
+.font-satoshi {
+  font-family: 'Satoshi', sans-serif;
+}
+
+.bg-masterpiece {
+  background-color: #1C1C1A;
+}
+
+.text-masterpiece-secondary {
+  color: #DAD5D0;
+}
+
+.text-masterpiece-primary {
+  color: #FFFFFF;
+}
+
+.bg-masterpiece-button {
+  background-color: #EFCB20;
+  color: #000000;
 }

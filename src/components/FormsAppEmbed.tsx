@@ -14,7 +14,7 @@ const FormsAppEmbed: React.FC<FormsAppEmbedProps> = ({ formId }) => {
     }
   }, [formId]);
 
-  return <div ref={formRef} className="w-full" />;
+  return <div ref={formRef} className="w-full min-h-[600px]" />;
 };
 
 export default FormsAppEmbed;
