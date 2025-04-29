@@ -101,6 +101,15 @@ const Index = () => {
             role="Founder Creator do Clube de Vendas"
           />
         </div>
+        
+        {/* Logo Below Testimonials */}
+        <div className="w-full flex justify-center mt-16 mb-8">
+          <img 
+            src="/lovable-uploads/8d000680-d8aa-4791-a481-b07fc4dc67f9.png" 
+            alt="MasterPiece Logo" 
+            className="h-32"
+          />
+        </div>
       </section>
       
       {/* Footer with Logo */}
