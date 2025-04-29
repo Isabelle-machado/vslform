@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
@@ -27,8 +28,7 @@ const Index = () => {
       <section className="w-full max-w-5xl mx-auto px-4 py-12 text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Assista o vídeo abaixo para entender como podemos{" "}
-          <span className="text-white py-0 mx-0 rounded-none px-0">revolucionar</span> seu negócio
-          educacional com sistemas e tecnologia
+          <span className="text-[#EFCB20] py-0 mx-0 rounded-none px-0">revolucionar seu negócio educacional</span> com sistemas e tecnologia
         </h1>
         
         <div className="mt-8 relative w-full max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl">
