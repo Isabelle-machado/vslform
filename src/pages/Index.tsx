@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import TestimonialCard from "@/components/TestimonialCard";
 import TextTestimonialCard from "@/components/TextTestimonialCard";
 import FormsAppEmbed from "@/components/FormsAppEmbed";
+import { Youtube, Instagram, Linkedin } from "lucide-react";
+
 const Index = () => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -49,22 +51,52 @@ const Index = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Primeiro vídeo */}
-          <TestimonialCard videoUrl="https://www.youtube.com/embed/R5GzrNiRzMA" username="@soudaviribas" role="Founder Creator da Eternity" />
+          <TestimonialCard 
+            videoUrl="https://www.youtube.com/embed/R5GzrNiRzMA" 
+            username="@soudaviribas" 
+            role="Founder Creator da Eternity" 
+            avatarSrc="/lovable-uploads/0d0de205-0d2c-454d-ad9e-843b4a78eaa2.png" 
+          />
           
           {/* Primeiro texto */}
-          <TextTestimonialCard text="Antes da MasterPiece nunca tinha encontrado alguém que conseguisse entender o que eu queria fazer para traduzir isso para meus alunos." username="@prof.jairsoares" role="Founder Creator TRG" />
+          <TextTestimonialCard 
+            text="Antes da MasterPiece nunca tinha encontrado alguém que conseguisse entender o que eu queria fazer para traduzir isso para meus alunos." 
+            username="@prof.jairsoares" 
+            role="Founder Creator TRG" 
+            avatarSrc="/lovable-uploads/40061526-6988-4f5d-b03d-02131f16c69c.png" 
+          />
           
           {/* Segundo vídeo */}
-          <TestimonialCard videoUrl="https://www.youtube.com/embed/Ohrl31XKudI" username="@dr.andrefreitass" role="Founder Creator da Dentista Classe A" />
+          <TestimonialCard 
+            videoUrl="https://www.youtube.com/embed/Ohrl31XKudI" 
+            username="@dr.andrefreitass" 
+            role="Founder Creator da Dentista Classe A" 
+            avatarSrc="/lovable-uploads/45ba2ef7-c878-4d99-b6af-75e28914d877.png" 
+          />
           
           {/* Segundo texto */}
-          <TextTestimonialCard text="Com a ajuda de tudo aqui dentro fiz meu primeiro evento na minha cidade nova AGV, fiz a primeira turma do Método IV, e já vamos fazer a segunda essa semana" username="@wellingtonavila_" role="Founder Creator Método IV" />
+          <TextTestimonialCard 
+            text="Com a ajuda de tudo aqui dentro fiz meu primeiro evento na minha cidade nova AGV, fiz a primeira turma do Método IV, e já vamos fazer a segunda essa semana" 
+            username="@wellingtonavila_" 
+            role="Founder Creator Método IV" 
+            avatarSrc="/lovable-uploads/af5263d8-60b1-4ec0-b648-dfead4ac2279.png" 
+          />
           
           {/* Terceiro vídeo */}
-          <TestimonialCard videoUrl="https://www.youtube.com/embed/nl7GXeevWbY" username="@yallioliveira" role="Founder Creator do Grupo UNBK" />
+          <TestimonialCard 
+            videoUrl="https://www.youtube.com/embed/nl7GXeevWbY" 
+            username="@yallioliveira" 
+            role="Founder Creator do Grupo UNBK" 
+            avatarSrc="/lovable-uploads/35eae8e8-2f68-40ac-929c-b0071759008c.png" 
+          />
           
           {/* Quarto vídeo */}
-          <TestimonialCard videoUrl="https://www.youtube.com/embed/YOEZzLpG1rM?feature=share" username="@darlansousa" role="Founder Creator do Clube de Vendas" />
+          <TestimonialCard 
+            videoUrl="https://www.youtube.com/embed/YOEZzLpG1rM?feature=share" 
+            username="@darlansousa" 
+            role="Founder Creator do Clube de Vendas" 
+            avatarSrc="/lovable-uploads/d3b8ffd4-6283-42f4-a722-0b9b174cd9a6.png" 
+          />
         </div>
         
         {/* Logo Below Testimonials */}
@@ -83,35 +115,25 @@ const Index = () => {
           <div className="text-xs text-[#DAD5D0] text-center max-w-3xl">
             <p className="mb-4 uppercase text-sm">IMPORTANTE: Isenção de responsabilidade sobre ganhos e rendimentos.</p>
             <p className="mb-6 text-xs">
-              Embora todos os depoimentos nesta página sejam reais, estes resultados são excepcionais e não representativos dos resultados que podem ser esperados por uma pessoa média. Os resultados podem variar conforme suas habilidades, experiência, formação e outros fatores. Ganhos anteriores não indicam resultados futuros.
+              Embora todos os depoimentos nesta página sejam reais, estes resultados são excepcionais e não representativos dos resultados que podem ser esperados por uma pessoa média. Os resultados podem variar conforme suas habilidades, experiência, formação e outros fatores. 
+              Ganhos anteriores não indicam resultados futuros.
             </p>
             <p className="text-xs">
-              A MasterPiece é uma empresa de educação e treinamento em marketing. Não vendemos oportunidades de negócio, programas para enriquecer rapidamente ou alternativas de trabalho da internet. Nossa missão é proporcionar educação de marketing de valor para você tomar decisões, mas não garantimos o sucesso em todos treinamentos. Não fazemos declarações de ganhos, situação ou afirmações de que você receberá benefícios financeiros específicos através do programa.
+              A MasterPiece é uma empresa de educação e serviços voltados à educação e tecnologia. Não vendemos oportunidades de negócio, programas para enriquecer rapidamente ou alternativas de trabalho da internet. Nossa missão é transformar sabedoria viva em estrutura escalável. Não fazemos declarações de ganhos, situação ou afirmações de que você receberá benefícios financeiros específicos através do programa.
             </p>
           </div>
           
           <div className="mt-10 text-center">
-            <h3 className="font-bold text-xl mb-2">MasterPiece</h3>
             <p className="text-sm text-[#DAD5D0] mb-4">Ensine com alma. Construa com clareza. Venda em escala.</p>
             <div className="flex justify-center space-x-4">
-              <a href="#" className="text-white hover:text-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
+              <a href="https://www.instagram.com/isabellesmachado" className="text-white hover:text-gray-400" target="_blank" rel="noopener noreferrer">
+                <Instagram size={20} />
               </a>
-              <a href="#" className="text-white hover:text-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                </svg>
+              <a href="https://www.youtube.com/@isabellesmachado" className="text-white hover:text-gray-400" target="_blank" rel="noopener noreferrer">
+                <Youtube size={20} />
               </a>
-              <a href="#" className="text-white hover:text-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                  <rect x="2" y="9" width="4" height="12"></rect>
-                  <circle cx="4" cy="4" r="2"></circle>
-                </svg>
+              <a href="https://www.linkedin.com/in/isabelle-machado-468b76352/" className="text-white hover:text-gray-400" target="_blank" rel="noopener noreferrer">
+                <Linkedin size={20} />
               </a>
             </div>
           </div>
