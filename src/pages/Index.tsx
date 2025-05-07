@@ -22,6 +22,10 @@ const Index = () => {
   return <div className="min-h-screen bg-[#1C1C1A] text-white flex flex-col items-center font-satoshi">
       {/* Hero Section with Video */}
       <section className="w-full max-w-5xl mx-auto px-4 py-12 text-center">
+        <p className="text-[#EFCB20] text-lg mb-4">
+          Sua ferramenta já está a caminho do seu email...
+        </p>
+        
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Assista o vídeo abaixo para entender como podemos{" "}
           <span className="text-[#EFCB20] py-0 mx-0 rounded-none px-0">revolucionar seu negócio educacional</span> com sistemas e tecnologia
