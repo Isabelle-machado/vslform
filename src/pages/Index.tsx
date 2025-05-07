@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -9,22 +8,17 @@ import { Youtube, Instagram, Linkedin } from "lucide-react";
 
 const Index = () => {
   useEffect(() => {
+    // Remove the old Forms.app script since we're not using it anymore
     const script = document.createElement("script");
-    script.src = "https://forms.app/cdn/embed.js";
+    script.src = "https://tally.so/widgets/embed.js";
     script.async = true;
-    script.defer = true;
-    script.onload = () => {
-      // @ts-ignore
-      new window.formsapp('680ffb834528e40002798b7b', 'standard', {
-        'width': '100vw',
-        'height': '600px'
-      }, 'https://59yt4z4p.forms.app');
-    };
     document.body.appendChild(script);
+    
     return () => {
       document.body.removeChild(script);
     };
   }, []);
+
   return <div className="min-h-screen bg-[#1C1C1A] text-white flex flex-col items-center font-satoshi">
       {/* Hero Section with Video */}
       <section className="w-full max-w-5xl mx-auto px-4 py-12 text-center">
@@ -37,9 +31,15 @@ const Index = () => {
           <iframe width="100%" height="400" src="https://www.youtube.com/embed/zJ5YbsF0ffQ" title="Video de apresentação" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-lg"></iframe>
         </div>
 
-        {/* Form Section */}
+        {/* Form Section - replaced with Tally.so embed */}
         <div className="mt-10 mb-10 w-full max-w-3xl mx-auto">
-          <FormsAppEmbed formId="680ffb834528e40002798b7b" />
+          <iframe src="https://tally.so/embed/mVdYgN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                  width="100%" 
+                  height="600" 
+                  frameBorder="0" 
+                  marginHeight={0} 
+                  marginWidth={0} 
+                  title="Tally Form"></iframe>
         </div>
       </section>
 
