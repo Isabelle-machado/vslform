@@ -43,7 +43,6 @@ const Index = () => {
             allowFullScreen={true} 
             width="100%" 
             height="400" 
-            fetchPriority="high"
             className="rounded-lg"
           ></iframe>
         </div>
