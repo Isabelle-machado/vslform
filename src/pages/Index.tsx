@@ -32,7 +32,17 @@ const Index = () => {
         </h1>
         
         <div className="mt-8 relative w-full max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl">
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/zJ5YbsF0ffQ" title="Video de apresentação" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-lg"></iframe>
+          <iframe 
+            id="panda-44ed41dd-544c-4d11-b8b8-640d5d758eab" 
+            src="https://player-vz-5073547e-d25.tv.pandavideo.com.br/embed/?v=44ed41dd-544c-4d11-b8b8-640d5d758eab" 
+            style={{ border: "none" }} 
+            allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" 
+            allowFullScreen={true} 
+            width="100%" 
+            height="400" 
+            fetchPriority="high"
+            className="rounded-lg"
+          ></iframe>
         </div>
 
         {/* Form Section - replaced with Tally.so embed */}
