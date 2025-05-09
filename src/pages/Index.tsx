@@ -5,8 +5,11 @@ import TestimonialCard from "@/components/TestimonialCard";
 import TextTestimonialCard from "@/components/TextTestimonialCard";
 import FormsAppEmbed from "@/components/FormsAppEmbed";
 import { Youtube, Instagram, Linkedin } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
+  const isMobile = useIsMobile();
+  
   useEffect(() => {
     // Remove the old Forms.app script since we're not using it anymore
     const script = document.createElement("script");
@@ -46,7 +49,7 @@ const Index = () => {
         </div>
 
         {/* Form Section - replaced with Tally.so embed */}
-        <div className="mt-10 mb-10 w-full max-w-3xl mx-auto">
+        <div className={`${isMobile ? 'mt-2' : 'mt-10'} mb-10 w-full max-w-3xl mx-auto`}>
           <iframe src="https://tally.so/embed/mVdYgN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
                   width="100%" 
                   height="600" 
